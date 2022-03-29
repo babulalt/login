@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Welcome in sign of page</title>
+    </head>
+    <body>
+        <form action="/register" method="POST">
+            <h1>Sign UP</h1>
+            <div>
+                First Name <input type="text" name="fname" placeholder="Enter First Name Here"/>
+            </div>
+            <br/>
+            <div>
+                Last Name <input type="text" name="lname" placeholder="Enter Last Name Here"/>
+            </div>
+            <br/>
+            <div>
+                Email <input type="email" name="uemail" placeholder="exaple@gmail.com"/>
+            </div>
+            <br/>
+            <div>
+                Username <input type="text" name="uname" placeholder="username here"/>
+            </div>
+            <br/>
+            <div>
+                 Password<input type="password" name="pwd" placeholder="password here"/>
+            </div>
+        <br/>
+        <div><h2 style="color:red;">{{.LError}}</h2></div>
+            <div>
+                <input type="submit"  value="Register"/>
+           </div>
+           <br/>
+           </form>
+    </body>
+</html>
